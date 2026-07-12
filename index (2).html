@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victor Gabriel — Dev Front-End em formação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot">&gt;</span> victor.dev</div>
+    <ul class="nav-links">
+      <li><a href="#sobre">sobre<span class="ext">.js</span></a></li>
+      <li><a href="#skills">skills<span class="ext">.json</span></a></li>
+      <li><a href="#projetos">projetos<span class="ext">.md</span></a></li>
+      <li><a href="#contato">contato<span class="ext">.sh</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <div class="wrap" style="padding-top:56px;">
+    <div class="editor">
+      <div class="editor-chrome">
+        <div class="dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+        <div class="tabs">
+          <a class="tab active" href="#sobre">sobre.js</a>
+          <a class="tab" href="#skills">skills.json</a>
+          <a class="tab" href="#projetos">projetos.md</a>
+          <a class="tab" href="#contato">contato.sh</a>
+        </div>
+      </div>
+      <div class="editor-body">
+        <div class="gutter"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div></div>
+        <div class="code">
+          <div><span class="com">// portfólio — em construção contínua</span></div>
+          <div><span class="kw">const</span> <span class="key">dev</span> <span class="punc">=</span> {</div>
+          <div>&nbsp;&nbsp;name: <span class="str">"Victor Gabriel"</span>,</div>
+          <div>&nbsp;&nbsp;role: <span class="str">"Estudante &amp; Dev Front-End"</span>,</div>
+          <div>&nbsp;&nbsp;foco: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JavaScript"</span>],</div>
+          <div>&nbsp;&nbsp;objetivo: <span class="str">"Engenharia de Software"</span></div>
+          <div>};</div>
+          <div><span id="typed"></span><span class="cursor"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://github.com/victorgabrieldevbr" target="_blank" rel="noopener">Ver GitHub →</a>
+      <a class="btn btn-ghost" href="#contato">Falar com Victor</a>
+    </div>
+  </div>
+
+  <section id="sobre">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Sobre</h2>
+        <span class="path">~/<span class="file">sobre.js</span></span>
+      </div>
+      <div class="about-block">
+        <p>Sou estudante e estou me preparando para seguir carreira em Engenharia de Software. Atualmente estudo desenvolvimento web com foco em HTML, CSS e JavaScript, buscando evoluir constantemente através de projetos práticos e da construção de um portfólio profissional.</p>
+        <p>Meu objetivo é atuar como engenheiro de software e desenvolver soluções úteis e escaláveis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <span class="path">~/<span class="file">skills.json</span></span>
+      </div>
+      <div class="import-line"><span class="kw">import</span> { <span class="key">HTML</span>, <span class="key">CSS</span>, <span class="key">JavaScript</span> } <span class="kw">from</span> <span class="str">"fundamentos-web"</span>;</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="name">HTML</div>
+          <span class="status">em prática</span>
+          <p>Estruturação semântica de páginas e acessibilidade básica.</p>
+        </div>
+        <div class="skill-card">
+          <div class="name">CSS</div>
+          <span class="status">em prática</span>
+          <p>Layouts responsivos, Flexbox e fundamentos de Grid.</p>
+        </div>
+        <div class="skill-card">
+          <div class="name">JavaScript</div>
+          <span class="status">estudando</span>
+          <p>Lógica de programação e interatividade no front-end.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Projetos</h2>
+        <span class="path">~/<span class="file">projetos.md</span></span>
+      </div>
+      <div class="terminal">
+        <div class="line"><span class="prompt">$</span> ls projetos/</div>
+        <div class="line out">// nenhum projeto publicado ainda</div>
+        <div class="line warn">⚠ em construção — novos projetos chegam em breve</div>
+        <div class="line" style="margin-top:14px;"><span class="prompt">$</span> git log --author=victor --all</div>
+        <div class="line out">acompanhe o progresso em tempo real no <a href="https://github.com/victorgabrieldevbr" target="_blank" rel="noopener">github.com/victorgabrieldevbr</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" style="border-bottom:none;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Contato</h2>
+        <span class="path">~/<span class="file">contato.sh</span></span>
+      </div>
+      <div class="contact-terminal">
+        <div class="cmd"><span class="prompt">$</span>contact <span class="flag">--email</span> <span class="flag">--github</span></div>
+        <div class="contact-row">→ <a href="mailto:victorgabriel.devbr@gmail.com">victorgabriel.devbr@gmail.com</a></div>
+        <div class="contact-row">→ <a href="https://github.com/victorgabrieldevbr" target="_blank" rel="noopener">github.com/victorgabrieldevbr</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Victor Gabriel — construído com HTML, CSS e curiosidade.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
